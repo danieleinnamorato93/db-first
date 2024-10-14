@@ -1,14 +1,16 @@
 Nome Tabella: used_cars
 
-id                                      BIGINT
-car_manufacturer                        VARCHAR(255)
-model_name                              VARCHAR(255)
-fuel_type                               VARCHAR(255)
-body_style                              VARCHAR(255)
-kilometres                              FLOAT (6,3)
-price                                   FLOAT (5,4)
-production_year                         YEAR
-transmission                            VARCHAR
-available                               BOOLEAN
-description                             TEXT
-note                                    TEXT
+id                                      BIGINT                      PRIMARY_KEY      AUTO_INCREMENT
+car_manufacturer                        VARCHAR(255)                NOT_NULL
+model_name                              VARCHAR(255)                NOT_NULL
+fuel_type                               VARCHAR(255)                NOT_NULL
+body_style                              VARCHAR(255)                NOT_NULL
+color                                   VARCHAR(255)                NOT_NULL
+license_plate                           CHAR(7)                     NOT_NULL          UNIQUE
+kilometres                              UNSIGNED MEDIUMINT          NOT_NULL          
+price                                   DECIMAL (5,3)               NOT_NULL        
+production_year                         YEAR                        NOT_NULL
+transmission                            VARCHAR                     NOT_NULL
+available                               BOOLEAN                     NOT_NULL          DEFAULT(TRUE)
+description                             TEXT                        NULL
+note                                    TEXT                        NULL
