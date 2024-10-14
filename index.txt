@@ -1,9 +1,14 @@
 Nome Tabella: used_cars
 
-id
-casa_automobilistica
-nome_modello
-alimentazione
-tipo_carrozzeria
-chilometri
-prezzo
+id                                      BIGINT
+car_manufacturer                        VARCHAR(255)
+model_name                              VARCHAR(255)
+fuel_type                               VARCHAR(255)
+body_style                              VARCHAR(255)
+kilometres                              FLOAT (6,3)
+price                                   FLOAT (5,4)
+production_year                         YEAR
+transmission                            VARCHAR
+available                               BOOLEAN
+description                             TEXT
+note                                    TEXT
