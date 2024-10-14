@@ -1,1 +1,9 @@
 Nome Tabella: used_cars
+
+id
+casa_automobilistica
+nome_modello
+alimentazione
+tipo_carrozzeria
+chilometri
+prezzo
